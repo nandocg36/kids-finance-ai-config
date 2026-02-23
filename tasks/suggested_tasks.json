@@ -1,0 +1,30 @@
+{
+  "_version": "1.0.0",
+  "_description": "Tarefas sugeridas por faixa etaria",
+  "_lastUpdated": "2025-07-22",
+
+  "age_groups": {
+    "0_5": {
+      "label": "Ate 5 anos",
+      "tasks": "Guardar brinquedos, arrumar cama (com ajuda), escovar dentes sozinho, regar plantinha, dar comida pro pet"
+    },
+    "6_8": {
+      "label": "6 a 8 anos",
+      "tasks": "Arrumar cama, guardar brinquedos, por mesa, organizar mochila, estudar 15min, ler um livro, ajudar a dobrar roupas"
+    },
+    "9_12": {
+      "label": "9 a 12 anos",
+      "tasks": "Arrumar quarto completo, lavar louca, varrer/passar pano, estudar 30min, ler capitulo de livro, cuidar do pet, organizar armario"
+    },
+    "13_plus": {
+      "label": "13 anos ou mais",
+      "tasks": "Cozinhar refeicao simples, lavar roupas, limpar banheiro, fazer compras, estudar 45min, organizar toda a casa, ajudar vizinhos"
+    },
+    "unknown": {
+      "label": "Idade nao informada",
+      "tasks": "Arrumar a cama, guardar brinquedos, estudar, ajudar em casa"
+    }
+  },
+
+  "task_categories": ["Casa", "Escola", "Jardim", "Geral", "Extra"]
+}

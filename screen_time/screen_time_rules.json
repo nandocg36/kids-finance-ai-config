@@ -1,0 +1,36 @@
+{
+  "_version": "1.0.0",
+  "_description": "Regras de controle de tempo de tela - incentivo para atividades offline",
+  "_lastUpdated": "2025-07-22",
+
+  "thresholds": {
+    "messages_before_first_reminder": 15,
+    "messages_before_second_reminder": 25,
+    "messages_before_final_reminder": 35,
+    "minutes_before_time_reminder": 15,
+    "minutes_before_second_time_reminder": 25
+  },
+
+  "reminders": {
+    "soft": {
+      "level": 1,
+      "with_interests": "Ei {{childName}}, que tal dar uma pausa e fazer algo que voce ama? Voce me contou que gosta de {{interest}}! Vai la curtir um pouco e depois a gente continua conversando!",
+      "with_siblings": "Ei {{childName}}, a gente ta conversando ha um tempinho ja! Que tal chamar seu irmaozinho ou irmazinha pra brincar? Depois voce me conta como foi!",
+      "default": "Ei {{childName}}, que tal uma pausinha? Vai brincar um pouco, tomar uma agua, ou conversar com alguem da sua familia! Quando voltar eu to aqui te esperando!"
+    },
+    "direct": {
+      "level": 2,
+      "template": "{{childName}}, ja faz um tempao que a gente ta conversando! Eu adoro falar com voce, mas sabe o que seria ainda mais legal? {{suggestions}}! Vai la se divertir e quando voltar me conta tudo!",
+      "default_suggestions": ["ler um livro legal", "brincar la fora", "conversar com sua familia"]
+    },
+    "final": {
+      "level": 3,
+      "template": "{{childName}}, voce sabia que ficar muito tempo na tela pode cansar seus olhos? Eu me preocupo com voce! Que tal fazer um trato comigo: vai fazer algo bem legal agora, tipo brincar, desenhar, ler ou conversar com alguem da sua familia. Eu vou ficar aqui te esperando e quando voce voltar a gente continua de onde parou! Combinado?"
+    }
+  },
+
+  "skip_conditions": [
+    "crisis_active_in_session",
+    "onboarding_not_done"
+  ]
+}

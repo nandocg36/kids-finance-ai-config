@@ -1,0 +1,69 @@
+{
+  "_version": "1.0.0",
+  "_description": "Palavras/expressoes usadas no onboarding para deteccao inteligente",
+  "_lastUpdated": "2025-07-22",
+
+  "noise_words": [
+    "eu", "quero", "que", "me", "chame", "chamar", "chama", "de", "pode",
+    "gostaria", "gosto", "por", "favor", "ser", "chamada", "chamado",
+    "prefiro", "te", "voce", "meu", "minha", "nome", "apelido",
+    "e", "o", "a", "um", "uma", "do", "da", "no", "na", "como",
+    "sou", "sim", "ok", "ta", "bom", "tudo", "bem",
+    "ola", "oi", "ei", "ah", "oh", "hm", "tipo"
+  ],
+
+  "dont_know_responses": [
+    "nao sei", "num sei", "n sei", "sei nao",
+    "nao lembro", "nao me lembro",
+    "nao tenho certeza",
+    "pula", "pular", "passa", "proxima", "pula essa",
+    "tanto faz", "qualquer", "nao importa",
+    "nao quero responder", "nao quero falar",
+    "depois", "mais tarde", "outra hora"
+  ],
+
+  "gender_detection": {
+    "female": [
+      "menina", "garota", "feminino", "mulher", "femea",
+      "sou menina", "sou garota", "sou a", "uma menina", "uma garota"
+    ],
+    "male": [
+      "menino", "garoto", "masculino", "homem",
+      "sou menino", "sou garoto", "sou o", "um menino", "um garoto"
+    ]
+  },
+
+  "correction_patterns": [
+    "errei", "nao e isso", "errado", "corrigir", "correcao",
+    "volta", "voltar", "anterior", "de novo", "repete",
+    "repetir", "nao era", "ta errado",
+    "quis dizer", "coloquei errado", "falei errado", "respondi errado",
+    "ta incorreto", "incorreto", "troquei",
+    "mudei de ideia", "quero mudar", "quero trocar",
+    "quero arrumar", "arrumar", "pode arrumar", "posso arrumar",
+    "posso mudar", "posso trocar", "posso corrigir"
+  ],
+
+  "edit_patterns": [
+    "mudar", "trocar", "alterar", "corrigir", "arrumar", "atualizar",
+    "quero mudar", "quero trocar", "quero alterar", "quero corrigir",
+    "posso mudar", "posso trocar", "posso alterar", "posso corrigir",
+    "pode mudar", "pode trocar", "pode alterar", "pode corrigir",
+    "errei", "errado", "incorreto", "coloquei errado", "falei errado"
+  ],
+
+  "emotional_keywords_for_session_context": [
+    "triste", "chorar", "morrer", "matar", "sozinho", "sozinha",
+    "medo", "raiva", "bravo", "brava", "chateado", "chateada", "mal", "ruim",
+    "ninguem", "nao quero", "nao gosto", "odeio", "sumir"
+  ],
+
+  "months_pt_br": {
+    "janeiro": 1, "fevereiro": 2, "marco": 3,
+    "abril": 4, "maio": 5, "junho": 6,
+    "julho": 7, "agosto": 8, "setembro": 9,
+    "outubro": 10, "novembro": 11, "dezembro": 12,
+    "jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5, "jun": 6,
+    "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12
+  }
+}

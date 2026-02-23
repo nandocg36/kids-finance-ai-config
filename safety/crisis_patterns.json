@@ -1,0 +1,85 @@
+{
+  "_version": "1.0.0",
+  "_description": "Padroes de deteccao de crise - palavras-chave para deteccao local ANTES de enviar para a IA",
+  "_lastUpdated": "2025-07-22",
+
+  "suicidal_thoughts": [
+    "quero morrer", "quero me matar", "vou me matar",
+    "nao quero mais viver", "não quero mais viver",
+    "quero sumir", "queria sumir",
+    "queria não ter nascido", "queria nao ter nascido",
+    "vou me machucar", "quero me machucar", "quero me cortar",
+    "vou me cortar", "quero acabar com tudo",
+    "nao tenho motivo pra viver", "não tenho motivo pra viver",
+    "nada tem sentido", "nao aguento mais", "não aguento mais",
+    "quero desaparecer", "melhor sem mim",
+    "ninguem se importa comigo", "ninguém se importa comigo",
+    "sou inutil", "sou inútil", "sou um lixo",
+    "quero dormir pra sempre", "quero ir embora pra sempre",
+    "cansada de viver", "cansado de viver",
+    "pular da ponte", "pular do predio", "pular do prédio",
+    "tomar veneno", "tomar remedio pra morrer", "tomar remédio pra morrer"
+  ],
+
+  "violence_intent": [
+    "quero matar", "vou matar", "quero machucar",
+    "vou machucar", "quero bater", "vou bater em",
+    "quero dar um tiro", "vou dar um tiro",
+    "quero esfaquear", "vou esfaquear",
+    "quero que morra", "quero que ele morra", "quero que ela morra",
+    "vou fazer ele pagar", "vou fazer ela pagar",
+    "tenho vontade de machucar", "vontade de matar",
+    "vou acabar com ele", "vou acabar com ela",
+    "vou destruir", "vou explodir",
+    "odeio ele quero que morra", "odeio ela quero que morra",
+    "quero fazer mal", "vou fazer mal",
+    "quero envenenar", "vou envenenar",
+    "quero atear fogo", "vou atear fogo", "vou tacar fogo"
+  ],
+
+  "abuse": [
+    "alguem me bateu", "alguém me bateu",
+    "me machucam", "me batem", "me bate",
+    "tenho medo de ir pra casa", "medo de ir pra casa",
+    "ele me toca", "ela me toca", "me tocam",
+    "me obrigam a", "faz coisas comigo",
+    "nao conta pra ninguem", "não conta pra ninguém",
+    "ele disse pra nao contar", "ela disse pra não contar"
+  ],
+
+  "secrecy_after_crisis": [
+    "nao conta", "não conta",
+    "nao avisa", "não avisa",
+    "nao fala", "não fala",
+    "nao manda", "não manda",
+    "nao envia", "não envia",
+    "guarda segredo", "e segredo", "é segredo",
+    "promete que nao", "promete que não",
+    "nao quero que ninguem", "não quero que ninguém",
+    "por favor nao", "por favor não",
+    "nao conta pra ninguem", "não conta pra ninguém",
+    "nao fala pro meu", "não fala pro meu",
+    "nao fala pra minha", "não fala pra minha",
+    "nao conta pro meu", "não conta pro meu",
+    "nao conta pra minha", "não conta pra minha",
+    "apaga isso", "deleta isso",
+    "esquece o que eu falei", "esquece o que eu disse",
+    "finge que eu nao falei", "finge que eu não falei"
+  ],
+
+  "asking_if_sent": [
+    "voce enviou", "você enviou",
+    "voce mandou", "você mandou",
+    "voce contou", "você contou",
+    "voce avisou", "você avisou",
+    "voce falou", "você falou",
+    "ja enviou", "já enviou",
+    "ja mandou", "já mandou",
+    "ja contou", "já contou",
+    "ja avisou", "já avisou",
+    "ja falou", "já falou",
+    "mandou mensagem", "enviou mensagem",
+    "contou pra alguem", "contou pra alguém",
+    "avisou alguem", "avisou alguém"
+  ]
+}
