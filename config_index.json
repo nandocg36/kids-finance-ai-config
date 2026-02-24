@@ -1,13 +1,15 @@
 {
-  "_version": "1.0.0",
+  "_version": "1.1.0",
   "_description": "Indice principal de configuracao IA - Kids Finance App",
-  "_lastUpdated": "2025-07-22",
+  "_lastUpdated": "2025-07-23",
 
   "config_files": {
     "safety_rules": "safety/safety_rules.json",
     "crisis_patterns": "safety/crisis_patterns.json",
     "personality_rules": "personality/personality_rules.json",
+    "system_prompt_template": "personality/system_prompt_template.json",
     "finance_rules": "finance/finance_rules.json",
+    "greetings": "greetings/greetings.json",
     "suggested_tasks": "tasks/suggested_tasks.json",
     "screen_time_rules": "screen_time/screen_time_rules.json",
     "email_recommendations": "email/email_recommendations.json",
@@ -18,6 +20,7 @@
     "Todos os arquivos sao carregados via HTTP a partir do repositorio GitHub",
     "Cache local e usado para fallback quando nao ha internet",
     "Para atualizar regras, edite os arquivos JSON no GitHub e o app atualiza automaticamente",
-    "NUNCA edite regras diretamente no codigo Dart - sempre use os JSONs"
+    "NUNCA edite regras diretamente no codigo Dart - sempre use os JSONs",
+    "NUNCA use letras repetidas (Eee, Uau, etc) nos textos - o TTS le errado"
   ]
 }
