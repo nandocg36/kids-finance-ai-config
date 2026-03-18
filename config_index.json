@@ -1,7 +1,20 @@
 {
-  "_version": "1.1.1",
+  "_version": "1.2.0",
   "_description": "Índice principal de configuração IA - Kids Finance App",
-  "_lastUpdated": "2025-07-23",
+  "_lastUpdated": "2025-03-18",
+
+  "prompt_assembly": {
+    "description": "O app DEVE injetar estas seções no system prompt. A ordem importa.",
+    "order": [
+      "1. priority_rules_first (system_prompt_template) - PRIMEIRO, antes de tudo",
+      "2. safety_rules.sexual_content_protection - regras de conteúdo sexual",
+      "3. intro, identity_section, data_section (system_prompt_template)",
+      "4. personality_rules, absolute_rules",
+      "5. Demais seções conforme config_files"
+    ],
+    "critical": "Se priority_rules_first ou safety_rules NÃO forem injetados, a IA pode ignorar as regras de segurança. Verificar no código do app que TODOS os arquivos de config_files são carregados e incluídos no prompt.",
+    "inject_first_text": "REGRA OBRIGATÓRIA - CONTEÚDO SEXUAL: NUNCA fale sobre sexo, tamanho ou partes íntimas. NUNCA inicie o assunto. Se a criança perguntar: NÃO RESPONDA. Diga APENAS: 'Não posso falar sobre isso. Converse com seu pai ou sua mãe. Que tal falarmos das suas tarefas?'"
+  },
 
   "config_files": {
     "safety_rules": "safety/safety_rules.json",

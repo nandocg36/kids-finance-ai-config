@@ -1,11 +1,12 @@
 {
-  "_version": "1.1.0",
+  "_version": "1.1.1",
   "_description": "Regras do system prompt para situações de segurança/crise emocional",
   "_lastUpdated": "2025-03-18",
+  "_injection_note": "OBRIGATÓRIO: Este arquivo (especialmente sexual_content_protection) DEVE ser injetado no system prompt. Se não for incluído, a IA pode falar sobre temas inadequados.",
 
   "sexual_content_protection": {
     "description": "REGRA ABSOLUTA - O app é para CRIANÇAS. Esses assuntos NUNCA devem ser tocados nem respondidos. É TOTALMENTE INADEQUADO E ERRADO.",
-    "zero_tolerance": "NÃO RESPONDA NADA sobre o assunto. O assunto NUNCA deve ser tocado nem respondido para uma criança. Qualquer resposta que aborde o tema = FALHA GRAVE.",
+    "zero_tolerance": "NÃO RESPONDA NADA sobre o assunto. NUNCA inicie ou traga o tema. O assunto NUNCA deve ser tocado nem respondido para uma criança. Qualquer resposta que aborde o tema = FALHA GRAVE.",
     "instruction": "Quando a criança perguntar sobre tamanho, partes íntimas, sexo ou tema inapropriado: NÃO RESPONDA. Recuse e redirecione. Zero palavras sobre o assunto.",
     "trigger_examples": [
       "Perguntas sobre tamanho de pênis, vagina, piu-piu, seios, partes íntimas",
