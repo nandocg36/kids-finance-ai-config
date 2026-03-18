@@ -24,6 +24,7 @@
     "NUNCA use letras repetidas (Eee, Uau, etc.) nos textos - o TTS lê errado",
     "Use acentuação correta nos textos lidos pelo TTS (você, não, criança, até, etc.)",
     "OBRIGATÓRIO no app: substituir {displayName} pelo nome da criança e {aiName} pelo nome que ela deu à IA em TODO texto injetado no prompt (incl. personality_rules, system_prompt, safety, cumprimentos, response_examples). Se não substituir, a IA pode falar literalmente 'displayName' ou '{displayName}' no chat. Usar o mesmo valor que em greetings {nome} para {displayName}. Padrão de chaves: uma chave {displayName}, não {{displayName}} (exceto finance/screen_time que usam {{ }} conforme o motor do app).",
-    "OBRIGATÓRIO: NUNCA dar resposta de exercícios escolares (ex: 5+5=10). A IA deve apenas dar dicas de método e orientar a perguntar aos pais/professores. Ver homework_school_help_rules."
+    "OBRIGATÓRIO: NUNCA dar resposta de exercícios escolares (ex: 5+5=10). A IA deve apenas dar dicas de método e orientar a perguntar aos pais/professores. Ver homework_school_help_rules.",
+    "CRÍTICO - CONTEÚDO SEXUAL: O app é para CRIANÇAS. Se a criança perguntar sobre sexo, partes íntimas ou contar situação sexual, a IA deve SAIR do assunto e orientar a falar com os pais. NUNCA responder, explicar ou engajar. Ver safety_rules sexual_content_protection."
   ]
 }

@@ -1,7 +1,28 @@
 {
-  "_version": "1.0.0",
+  "_version": "1.1.0",
   "_description": "Padrões de detecção de crise - palavras-chave para detecção local ANTES de enviar para a IA",
-  "_lastUpdated": "2025-07-22",
+  "_lastUpdated": "2025-03-18",
+
+  "sexual_content": [
+    "penis", "pênis",
+    "vagina",
+    "tamanho do", "tamanho da",
+    "fazer sexo", "transar", "transamos",
+    "quero fazer sexo", "quer fazer sexo",
+    "sexo comigo", "sexo com",
+    "partes intimas", "partes íntimas",
+    "parte de baixo", "parte de cima",
+    "peito", "peitos", "seio", "seios",
+    "bunda", "bumbum",
+    "cu", "buceta", "piroca",
+    "namorar e transar", "beijar e",
+    "menino quer fazer", "menina quer fazer",
+    "colega quer", "amigo quer",
+    "na escola falaram de sexo",
+    "curiosidade sobre sexo",
+    "como funciona sexo",
+    "o que e sexo", "o que é sexo"
+  ],
 
   "suicidal_thoughts": [
     "quero morrer", "quero me matar", "vou me matar",
@@ -44,7 +65,11 @@
     "ele me toca", "ela me toca", "me tocam",
     "me obrigam a", "faz coisas comigo",
     "nao conta pra ninguem", "não conta pra ninguém",
-    "ele disse pra nao contar", "ela disse pra não contar"
+    "ele disse pra nao contar", "ela disse pra não contar",
+    "quer fazer sexo comigo", "quero fazer sexo",
+    "menino quer fazer sexo", "menina quer fazer sexo",
+    "colega quer fazer", "amigo quer fazer",
+    "alguem quer fazer sexo", "alguém quer fazer sexo"
   ],
 
   "secrecy_after_crisis": [
