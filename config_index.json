@@ -1,6 +1,6 @@
 {
-  "_version": "1.1.0",
-  "_description": "Indice principal de configuracao IA - Kids Finance App",
+  "_version": "1.1.1",
+  "_description": "Índice principal de configuração IA - Kids Finance App",
   "_lastUpdated": "2025-07-23",
 
   "config_files": {
@@ -17,10 +17,12 @@
   },
 
   "notes": [
-    "Todos os arquivos sao carregados via HTTP a partir do repositorio GitHub",
-    "Cache local e usado para fallback quando nao ha internet",
+    "Todos os arquivos são carregados via HTTP a partir do repositório GitHub",
+    "Cache local é usado para fallback quando não há internet",
     "Para atualizar regras, edite os arquivos JSON no GitHub e o app atualiza automaticamente",
-    "NUNCA edite regras diretamente no codigo Dart - sempre use os JSONs",
-    "NUNCA use letras repetidas (Eee, Uau, etc) nos textos - o TTS le errado"
+    "NUNCA edite regras diretamente no código Dart - sempre use os JSONs",
+    "NUNCA use letras repetidas (Eee, Uau, etc.) nos textos - o TTS lê errado",
+    "Use acentuação correta nos textos lidos pelo TTS (você, não, criança, até, etc.)",
+    "OBRIGATÓRIO no app: substituir {displayName} pelo nome da criança e {aiName} pelo nome que ela deu à IA em TODO texto injetado no prompt (incl. personality_rules, system_prompt, safety, cumprimentos). Se não substituir, a IA pode falar 'display name'. Usar o mesmo valor que em greetings {nome} para {displayName}. Padrão de chaves: uma chave {displayName}, não {{displayName}} (exceto finance/screen_time que usam {{ }} conforme o motor do app)."
   ]
 }

@@ -1,6 +1,6 @@
 {
   "_version": "1.0.0",
-  "_description": "Padroes de deteccao de crise - palavras-chave para deteccao local ANTES de enviar para a IA",
+  "_description": "Padrões de detecção de crise - palavras-chave para detecção local ANTES de enviar para a IA",
   "_lastUpdated": "2025-07-22",
 
   "suicidal_thoughts": [

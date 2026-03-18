@@ -1,70 +1,70 @@
 {
-  "_version": "1.0.0",
-  "_description": "Recomendacoes de email por tipo de alerta de seguranca",
+  "_version": "1.0.1",
+  "_description": "Recomendações de e-mail por tipo de alerta de segurança",
   "_lastUpdated": "2025-07-22",
 
   "recommendations": {
     "suicidal_thoughts": {
-      "title": "RECOMENDACOES URGENTES",
+      "title": "RECOMENDAÇÕES URGENTES",
       "steps": [
-        "Converse com a crianca IMEDIATAMENTE com calma e carinho",
-        "Ouca sem julgar, sem minimizar o que ela sente",
-        "Diga que ela e muito amada e importante",
-        "NAO deixe a crianca sozinha",
-        "Procure ajuda profissional (psicologo/psiquiatra infantil)",
-        "CVV - Centro de Valorizacao da Vida: ligue 188 (24h, gratuito)",
+        "Converse com a criança IMEDIATAMENTE com calma e carinho",
+        "Ouça sem julgar, sem minimizar o que ela sente",
+        "Diga que ela é muito amada e importante",
+        "NÃO deixe a criança sozinha",
+        "Procure ajuda profissional (psicólogo/psiquiatra infantil)",
+        "CVV - Centro de Valorização da Vida: ligue 188 (24h, gratuito)",
         "SAMU: 192",
         "Bombeiros: 193"
       ],
-      "important": "Leve a serio qualquer manifestacao, mesmo que pareca leve. Criancas comunicam sofrimento de formas diferentes dos adultos."
+      "important": "Leve a sério qualquer manifestação, mesmo que pareça leve. Crianças comunicam sofrimento de formas diferentes dos adultos."
     },
     "self_harm": {
-      "title": "RECOMENDACOES URGENTES",
+      "title": "RECOMENDAÇÕES URGENTES",
       "steps": [
-        "Converse com a crianca IMEDIATAMENTE com calma e carinho",
-        "Ouca sem julgar, sem minimizar o que ela sente",
-        "Diga que ela e muito amada e importante",
-        "NAO deixe a crianca sozinha",
-        "Procure ajuda profissional (psicologo/psiquiatra infantil)",
-        "CVV - Centro de Valorizacao da Vida: ligue 188 (24h, gratuito)",
+        "Converse com a criança IMEDIATAMENTE com calma e carinho",
+        "Ouça sem julgar, sem minimizar o que ela sente",
+        "Diga que ela é muito amada e importante",
+        "NÃO deixe a criança sozinha",
+        "Procure ajuda profissional (psicólogo/psiquiatra infantil)",
+        "CVV - Centro de Valorização da Vida: ligue 188 (24h, gratuito)",
         "SAMU: 192",
         "Bombeiros: 193"
       ],
-      "important": "Leve a serio qualquer manifestacao, mesmo que pareca leve. Criancas comunicam sofrimento de formas diferentes dos adultos."
+      "important": "Leve a sério qualquer manifestação, mesmo que pareça leve. Crianças comunicam sofrimento de formas diferentes dos adultos."
     },
     "violence_intent": {
-      "title": "RECOMENDACOES URGENTES",
+      "title": "RECOMENDAÇÕES URGENTES",
       "steps": [
-        "Converse com a crianca IMEDIATAMENTE com calma",
+        "Converse com a criança IMEDIATAMENTE com calma",
         "Tente entender o que motivou esses sentimentos",
-        "Ouca sem julgar, mas seja firme sobre limites",
-        "NAO reaja com raiva ou punicao imediata",
-        "Procure ajuda profissional (psicologo infantil)",
-        "Verifique se ha situacao de bullying ou conflito",
-        "CVV - Centro de Valorizacao da Vida: ligue 188 (24h, gratuito)"
+        "Ouça sem julgar, mas seja firme sobre limites",
+        "NÃO reaja com raiva ou punição imediata",
+        "Procure ajuda profissional (psicólogo infantil)",
+        "Verifique se há situação de bullying ou conflito",
+        "CVV - Centro de Valorização da Vida: ligue 188 (24h, gratuito)"
       ],
-      "important": "Expressar raiva e normal, mas planejar violencia requer atencao profissional."
+      "important": "Expressar raiva é normal, mas planejar violência requer atenção profissional."
     },
     "abuse": {
-      "title": "RECOMENDACOES URGENTES",
+      "title": "RECOMENDAÇÕES URGENTES",
       "steps": [
-        "ACREDITE na crianca - NAO questione a veracidade",
-        "Mantenha a calma para nao assustar a crianca",
-        "Diga que ela nao tem culpa de nada",
-        "NAO confronte o suposto agressor diretamente",
+        "ACREDITE na criança - NÃO questione a veracidade",
+        "Mantenha a calma para não assustar a criança",
+        "Diga que ela não tem culpa de nada",
+        "NÃO confronte o suposto agressor diretamente",
         "Procure o Conselho Tutelar da sua cidade",
         "Disque 100 (Direitos Humanos) ou Disque 180",
-        "Leve a crianca para avaliacao medica",
-        "Registre ocorrencia na delegacia"
+        "Leve a criança para avaliação médica",
+        "Registre ocorrência na delegacia"
       ],
-      "important": "A protecao da crianca e prioridade absoluta."
+      "important": "A proteção da criança é prioridade absoluta."
     },
     "default": {
-      "title": "RECOMENDACOES",
+      "title": "RECOMENDAÇÕES",
       "steps": [
-        "Converse com a crianca com calma e carinho",
-        "Ouca sem julgar",
-        "Se necessario, procure ajuda profissional",
+        "Converse com a criança com calma e carinho",
+        "Ouça sem julgar",
+        "Se necessário, procure ajuda profissional",
         "CVV: ligue 188 (24h, gratuito)"
       ]
     }

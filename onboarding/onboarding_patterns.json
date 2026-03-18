@@ -1,6 +1,6 @@
 {
   "_version": "1.0.0",
-  "_description": "Palavras/expressoes usadas no onboarding para deteccao inteligente",
+  "_description": "Palavras/expressões usadas no onboarding para detecção inteligente",
   "_lastUpdated": "2025-07-22",
 
   "noise_words": [
