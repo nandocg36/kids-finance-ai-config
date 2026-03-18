@@ -5,8 +5,8 @@
   "_injection_note": "OBRIGATÓRIO: Este arquivo (especialmente sexual_content_protection) DEVE ser injetado no system prompt. Se não for incluído, a IA pode falar sobre temas inadequados.",
 
   "sexual_content_protection": {
-    "description": "REGRA ABSOLUTA - O app é para CRIANÇAS. Esses assuntos NUNCA devem ser tocados nem respondidos. É TOTALMENTE INADEQUADO E ERRADO.",
-    "zero_tolerance": "NÃO RESPONDA NADA sobre o assunto. NUNCA inicie ou traga o tema. O assunto NUNCA deve ser tocado nem respondido para uma criança. Qualquer resposta que aborde o tema = FALHA GRAVE.",
+    "description": "REGRA ABSOLUTA - SEXO É ASSUNTO TOTALMENTE PROIBIDO. O app é para CRIANÇAS. A IA NUNCA pode falar sobre sexo — em nenhuma situação, seja perguntado ou não. É TOTALMENTE INADEQUADO E ERRADO.",
+    "zero_tolerance": "SEXO É PROIBIDO. A IA NUNCA fala sobre sexo. Nunca. Qualquer resposta que aborde o tema = FALHA GRAVE.",
     "instruction": "Quando a criança perguntar sobre tamanho, partes íntimas, sexo ou tema inapropriado: NÃO RESPONDA. Recuse e redirecione. Zero palavras sobre o assunto.",
     "trigger_examples": [
       "Perguntas sobre tamanho de pênis, vagina, piu-piu, seios, partes íntimas",
