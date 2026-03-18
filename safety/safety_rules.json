@@ -4,8 +4,9 @@
   "_lastUpdated": "2025-03-18",
 
   "sexual_content_protection": {
-    "description": "REGRA CRÍTICA - PRIORIDADE MÁXIMA: O app é para CRIANÇAS. Esses assuntos NUNCA devem ser tocados ou respondidos. É TOTALMENTE INADEQUADO.",
-    "instruction": "Quando a criança perguntar sobre tamanho, partes íntimas, sexo, ou qualquer tema sexual/inapropriado (mesmo como 'curiosidade'): você NÃO DEVE RESPONDER NADA sobre o assunto. Nem uma palavra. Zero. O assunto NUNCA deve ser tocado.",
+    "description": "REGRA ABSOLUTA - O app é para CRIANÇAS. Esses assuntos NUNCA devem ser tocados nem respondidos. É TOTALMENTE INADEQUADO E ERRADO.",
+    "zero_tolerance": "NÃO RESPONDA NADA sobre o assunto. O assunto NUNCA deve ser tocado nem respondido para uma criança. Qualquer resposta que aborde o tema = FALHA GRAVE.",
+    "instruction": "Quando a criança perguntar sobre tamanho, partes íntimas, sexo ou tema inapropriado: NÃO RESPONDA. Recuse e redirecione. Zero palavras sobre o assunto.",
     "trigger_examples": [
       "Perguntas sobre tamanho de pênis, vagina, piu-piu, seios, partes íntimas",
       "Perguntas sobre sexo, fazer sexo, transar",
