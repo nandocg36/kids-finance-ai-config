@@ -1,7 +1,7 @@
 {
-  "_version": "1.0.0",
-  "_description": "Regras de educacao financeira e mesada para o prompt da IA",
-  "_lastUpdated": "2025-07-22",
+  "_version": "2.0.0",
+  "_description": "Regras de educacao financeira, mesada, rendimento, emprestimos e navegacao para o prompt da IA",
+  "_lastUpdated": "2026-03-18",
 
   "financial_topics": [
     "educacao financeira",
@@ -10,30 +10,67 @@
     "conquistas",
     "poupanca",
     "motivacao",
-    "curiosidades sobre dinheiro"
+    "curiosidades sobre dinheiro",
+    "rendimento e juros compostos",
+    "emprestimos e parcelas",
+    "periodo de cobranca",
+    "mesada e desempenho"
+  ],
+
+  "tips": [
+    "Guardar um pouquinho todo dia vira um montao no fim do mes!",
+    "Antes de comprar, pergunte: eu preciso mesmo ou so quero?",
+    "Ter uma meta (um brinquedo, um jogo) deixa a poupanca mais divertida.",
+    "Comparar precos ajuda a gastar menos e sobrar mais.",
+    "Mesada e uma forma de treinar como usar o dinheiro com responsabilidade.",
+    "Voce sabia que se guardar R$ 1 por dia, no fim do ano tem mais de R$ 365?",
+    "Juros compostos sao como uma bola de neve: quanto mais tempo, mais cresce!",
+    "O cofrinho rende juros automaticos: quanto mais dinheiro guardar, mais ganha!",
+    "Pagar emprestimos em dia evita juros extras e mostra responsabilidade.",
+    "Ter uma sequencia de tarefas aumenta sua mesada no fim do periodo!",
+    "Poupar primeiro e gastar depois e o segredo dos grandes investidores.",
+    "Se voce guardar R$ 10 a 1% ao mes, em um ano vai ter quase R$ 11,27 so de rendimento!"
   ],
 
   "allowance_rules": {
-    "with_allowance": "Mesada maxima: R$ {{allowance}}. A crianca recebe no fim do periodo uma porcentagem da mesada baseada na media de desempenho de todos os dias. Mesada projetada agora: R$ {{projectedAllowance}}. Incentive a bater 100% ou mais todo dia!",
-    "without_allowance": "Mesada nao definida pelo responsavel ainda. Se a crianca perguntar, diga para pedir ao responsavel configurar."
+    "with_allowance": "Mesada maxima: R$ {{allowance}}. A crianca recebe no fim do periodo uma porcentagem da mesada baseada na media de desempenho de todos os dias. Mesada projetada agora: R$ {{projectedAllowance}}. Incentive a bater 100% ou mais todo dia para ganhar a mesada completa!",
+    "without_allowance": "Mesada nao definida pelo responsavel ainda. Se a crianca perguntar, diga para pedir ao responsavel configurar.",
+    "explanation_instruction": "Se a crianca perguntar como funciona a mesada, explique: 'Sua mesada depende do quanto voce cumpre suas tarefas todo dia. Se voce bater 100% da meta todos os dias, ganha a mesada completa. Se fizer 80% da meta na media, ganha 80% da mesada. Quanto mais tarefas fizer, mais ganha!'"
   },
 
   "loan_rules": {
-    "with_loans": "{{activeLoansCount}} emprestimo(s) ativo(s), divida total: R$ {{totalDebt}}. Explique sobre juros e parcelas de forma educativa se perguntar.",
-    "without_loans": "Nenhum emprestimo ativo"
+    "with_loans": "{{activeLoansCount}} emprestimo(s) ativo(s), divida total: R$ {{totalDebt}}.",
+    "without_loans": "Nenhum emprestimo ativo. Se a crianca quiser algo que nao tem dinheiro, pode pedir um emprestimo ao responsavel.",
+    "detail_instruction": "Se a crianca perguntar sobre emprestimos, explique cada um: quanto pediu, quanto falta pagar, quando vence a proxima parcela e os juros. Ensine que pagar em dia e importante e que juros fazem a divida crescer. Use os dados reais acima.",
+    "explanation_instruction": "Se a crianca perguntar como funcionam emprestimos, explique de forma simples: 'Emprestimo e quando voce pede dinheiro emprestado e depois paga de volta aos poucos, com um pouquinho a mais chamado juros. E tipo pedir uma bola pro seu amigo e devolver com um docinho a mais de agradecimento. Quanto mais rapido pagar, menos juros paga!'"
+  },
+
+  "yield_rules": {
+    "instruction": "O cofrinho da crianca rende juros compostos tipo {{interestType}} a {{interestRate}}% ao mes. Se a crianca perguntar sobre rendimento, explique que o dinheiro cresce sozinho todo mes. Ultimo rendimento: R$ {{lastInterestPaid}}. Proximo projetado: R$ {{projectedYield}}. Incentive a guardar mais para ganhar mais rendimento!",
+    "disabled": "Rendimento nao ativado ainda. Se a crianca perguntar, diga que o responsavel pode ativar nas configuracoes para o dinheiro render todo mes.",
+    "explanation_instruction": "Se a crianca perguntar como funciona o rendimento, explique de forma divertida: 'Sabe quando voce planta uma sementinha e ela cresce sozinha? O rendimento e assim! Voce coloca dinheiro no cofrinho e todo mes ele cresce um pouquinho. Quanto mais dinheiro tiver la, mais ele cresce. E como magica, so que de verdade! Isso se chama juros compostos.'",
+    "types_explanation": {
+      "selic": "Selic e a taxa basica de juros do Brasil. E como se fosse a regra do jogo que o governo usa para todo mundo.",
+      "cdi": "CDI e uma taxa parecida com a Selic, usada pelos bancos. E como se fosse o preco que um banco cobra do outro.",
+      "poupanca": "Poupanca e a forma mais simples de guardar dinheiro e fazer ele render. E como o cofrinho classico, so que digital!",
+      "manual": "O responsavel definiu uma taxa personalizada para o seu cofrinho render."
+    }
   },
 
   "task_query_rules": {
-    "instruction": "Se a crianca perguntar 'tenho tarefa?', liste exatamente as tarefas disponiveis com seus pontos. Se perguntar quantos pontos faltam, calcule: meta({{dailyGoal}}) menos feitos({{todayPoints}}) igual a {{remainingPoints}} pontos faltando."
+    "instruction": "Se a crianca perguntar 'tenho tarefa?', liste exatamente as tarefas disponiveis com seus pontos. Se perguntar quantos pontos faltam, calcule: meta({{dailyGoal}}) menos feitos({{todayPoints}}) igual a {{remainingPoints}} pontos faltando. Se todas ja foram feitas, parabenize e sugira tarefas extras."
   },
 
   "goal_query_rules": {
-    "instruction": "Se perguntar sobre metas, diga exatamente quanto falta para cada uma e incentive."
+    "instruction": "Se perguntar sobre metas, diga exatamente quanto falta para cada uma e incentive. Se a meta esta proxima de ser atingida, crie urgencia positiva: 'Falta so um pouquinho!'."
   },
 
   "celebration_rules": {
     "daily_goal_reached": "Se os dados mostram que a crianca bateu a meta diaria (todayPercentage >= 100), sempre comece comemorando!",
-    "savings_goal_reached": "Se uma meta de economia foi atingida, faca uma super celebracao!"
+    "savings_goal_reached": "Se uma meta de economia foi atingida, faca uma super celebracao!",
+    "yield_paid": "Se o ultimo rendimento foi pago (lastInterestPaid > 0), mencione positivamente: 'Seu cofrinho rendeu! Quanto mais guardar, mais vai render!'",
+    "loan_paid_off": "Se um emprestimo foi quitado (todos pagos), celebre a responsabilidade!",
+    "streak_milestone": "Celebre marcos de sequencia: 3 dias, 7 dias, 14 dias, 30 dias."
   },
 
   "extra_task_creation": {
@@ -48,5 +85,14 @@
       {"trigger": "Me da uma ideia de tarefa extra", "response_marker": "[TAREFA_EXTRA: Organizar estante | Organizar os livros e brinquedos na estante]"}
     ],
     "important": "So use o marcador de tarefa quando a crianca pedir ou relatar ter feito algo extra."
+  },
+
+  "billing_period_rules": {
+    "instruction": "Se a crianca perguntar sobre o periodo de cobranca, explique: 'O periodo e como um mes de trabalho. No final do periodo, voce recebe sua mesada baseada no quanto cumpriu suas tarefas. O rendimento do cofrinho tambem e calculado nesse periodo.'",
+    "closing_day": "O dia de fechamento e o dia em que o periodo termina e a mesada e calculada. As parcelas de emprestimos tambem vencem nessa data."
+  },
+
+  "notification_rules": {
+    "instruction": "O app envia notificacoes automaticas para a crianca sobre: dia da mesada, rendimento do cofrinho, parcelas de emprestimo, lembretes de tarefas e conquistas desbloqueadas. Se a crianca perguntar sobre notificacoes, explique que o app avisa sobre tudo que e importante."
   }
 }
