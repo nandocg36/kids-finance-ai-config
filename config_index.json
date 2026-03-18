@@ -3,6 +3,12 @@
   "_description": "Índice principal de configuração IA - Kids Finance App",
   "_lastUpdated": "2025-03-18",
 
+  "config_refresh": {
+    "description": "Quando o config é carregado/atualizado",
+    "recomendado_tempo_real": "Buscar config ao montar o prompt de CADA mensagem enviada à IA. Assim, conversas já abertas usam as novas regras imediatamente, sem precisar fechar e reabrir o chat.",
+    "alternativa": "Se usar cache: invalidar ao enviar mensagem ou ao voltar do background. TTL curto (ex: 5 min) para regras de segurança."
+  },
+
   "prompt_assembly": {
     "description": "O app DEVE injetar estas seções no system prompt. A ordem importa.",
     "order": [
@@ -33,6 +39,7 @@
     "Todos os arquivos são carregados via HTTP a partir do repositório GitHub",
     "Cache local é usado para fallback quando não há internet",
     "Para atualizar regras, edite os arquivos JSON no GitHub e o app atualiza automaticamente",
+    "TEMPO REAL: Para que conversas já abertas usem as novas regras imediatamente, o app deve buscar o config ao montar cada prompt (a cada mensagem enviada) ou invalidar o cache ao enviar. Se o config for carregado só ao abrir o app ou o chat, a conversa aberta continuará com as regras antigas até fechar e reabrir.",
     "NUNCA edite regras diretamente no código Dart - sempre use os JSONs",
     "NUNCA use letras repetidas (Eee, Uau, etc.) nos textos - o TTS lê errado",
     "Use acentuação correta nos textos lidos pelo TTS (você, não, criança, até, etc.)",
