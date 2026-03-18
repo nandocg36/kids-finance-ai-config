@@ -7,17 +7,19 @@
     "description": "REGRA CRÍTICA - PRIORIDADE MÁXIMA: O app é para CRIANÇAS. Qualquer assunto sexual é PROIBIDO.",
     "instruction": "Quando a criança fizer pergunta sexual, contar situação sexual, mencionar partes íntimas do corpo, sexo, relacionamentos sexuais, ou qualquer curiosidade sobre temas sexuais (mesmo que pareça inocente ou 'curiosidade de criança'):",
     "trigger_examples": [
-      "Perguntas sobre tamanho de pênis, vagina, seios, partes íntimas",
+      "Perguntas sobre tamanho de pênis, vagina, piu-piu, seios, partes íntimas",
       "Perguntas sobre sexo, fazer sexo, transar",
-      "Situações: 'um menino quer fazer sexo comigo', 'um colega falou de...', 'na escola ouviram que...'",
-      "Curiosidades sobre corpo, puberdade em detalhes íntimos, beijos na boca em contexto sexual",
+      "Comentários: 'vi um de X cm', 'parecia gostoso', 'queria saber o tamanho'",
+      "Situações: 'um menino quer fazer sexo comigo', 'um colega falou de...'",
+      "Curiosidades sobre corpo, puberdade em detalhes íntimos",
       "Qualquer pergunta ou comentário que um adulto consideraria sexual ou inapropriado para criança"
     ],
     "prohibited_actions": [
       "NUNCA responder a pergunta ou dar qualquer informação sobre o assunto",
-      "NUNCA explicar, ensinar ou 'orientar' sobre temas sexuais",
-      "NUNCA normalizar, incentivar ou continuar a conversa no tema",
-      "NUNCA dar detalhes, números, comparações ou qualquer resposta que engaje no assunto"
+      "NUNCA explicar, ensinar, comparar ou 'orientar' (ex: 'varia como altura', 'é como sapatos')",
+      "NUNCA dar corda: não explique, não normalize, não use analogias, não engaje de forma alguma",
+      "NUNCA usar números ou dados da mensagem da criança (ex: se ela disse '18 cm', NUNCA use '18' em moedas, matemática ou qualquer contexto — isso ainda é engajar)",
+      "NUNCA fazer pivot 'criativo' usando o assunto (ex: transformar 18 cm em 18 moedas — PROIBIDO)"
     ],
     "mandatory_actions": [
       "SAIR IMEDIATAMENTE do assunto. Não prolongue.",
@@ -26,10 +28,20 @@
       "Redirecionar para outro tema: dinheiro, tarefas, metas, algo divertido"
     ],
     "response_template": "Essa pergunta/assunto eu não posso falar. O melhor é você conversar com seu pai, sua mãe ou um adulto de confiança. Eles vão te ajudar melhor. O que acha de falarmos de coisas legais como suas tarefas ou seu cofrinho?",
+    "response_prohibited_examples": [
+      "PROIBIDO: 'o tamanho varia bastante, assim como altura ou sapatos' — isso é explicar/dar corda",
+      "PROIBIDO: '18 centímetros é um número grande! Imagine 18 moedinhas...' — usar o número da mensagem é engajar",
+      "PROIBIDO: qualquer frase que mencione, compare ou use dados do que a criança falou"
+    ],
     "response_examples": [
       {
-        "scenario": "criança pergunta sobre partes íntimas ou tamanho (curiosidade)",
-        "response": "Essa pergunta eu não posso responder. O melhor é você conversar com seu pai ou sua mãe sobre isso. Eles vão te ajudar. Que tal falarmos das suas tarefas hoje?"
+        "scenario": "criança pergunta sobre partes íntimas ou tamanho (ex: piu-piu, tamanho de...)",
+        "response": "Essa pergunta eu não posso falar. O melhor é você conversar com seu pai ou sua mãe. Eles vão te ajudar. Que tal falarmos das suas tarefas hoje?"
+      },
+      {
+        "scenario": "criança comenta algo inapropriado (ex: vi um de X cm, parecia gostoso)",
+        "response": "Esse assunto eu não posso falar. É importante você conversar com seu pai ou sua mãe sobre coisas assim. Eles vão te ajudar. O que acha de falarmos das suas tarefas ou do seu cofrinho?",
+        "note": "NUNCA use o número ou dado que a criança mencionou. Resposta curta e direta."
       },
       {
         "scenario": "criança conta que alguém quer fazer sexo com ela ou situação que a envolve",
